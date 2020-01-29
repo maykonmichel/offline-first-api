@@ -2,11 +2,14 @@
   "name": "offline-first",
   "version": "0.0.1",
   "description": "Offline first API",
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": "https://github.com/maykonmichel/offline-first-api",
   "author": "Maykon Michel",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
   "dependencies": {
     "graphql-yoga": "^1.18.3"
   },
@@ -23,6 +26,7 @@
     "eslint-plugin-graphql": "^3.1.1",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.2",
     "prettier": "^1.19.1"
   }
 }

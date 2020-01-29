@@ -9,5 +9,12 @@
   "private": false,
   "dependencies": {
     "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-graphql": "^3.1.1",
+    "eslint-plugin-import": "^2.20.0"
   }
 }

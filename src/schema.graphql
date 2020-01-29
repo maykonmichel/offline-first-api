@@ -5,3 +5,12 @@ schema {
 type Query {
     hello: String
 }
+
+type Todo {
+    id: ID!
+    description: String!
+}
+
+input todoInput {
+    description: String!
+}

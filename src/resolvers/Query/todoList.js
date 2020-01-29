@@ -1,1 +1,1 @@
-export default (parent, args, {db}) => db;
+export default (parent, args, {db: {getTodoList}}) => getTodoList();

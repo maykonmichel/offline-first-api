@@ -3,7 +3,7 @@ schema {
 }
 
 type Mutation {
-    addTodo(input: todoInput): Todo!
+    addTodo(description: String!): Todo!
 }
 
 type Query {
@@ -12,9 +12,5 @@ type Query {
 
 type Todo {
     id: ID!
-    description: String!
-}
-
-input todoInput {
     description: String!
 }

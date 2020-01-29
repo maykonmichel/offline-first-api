@@ -4,6 +4,7 @@ schema {
 
 type Mutation {
     addTodo(description: String!): Todo!
+    deleteTodo(id: ID!): Todo!
 }
 
 type Query {

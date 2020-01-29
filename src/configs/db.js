@@ -1,8 +1,23 @@
-const db = [];
+const todoList = [];
 
-db.push({
-  id: 1,
-  description: 'First todo',
-});
+const addTodo = description => {
+  const todo = {id: todoList.length + 1, active: true, description};
+  todoList.push(todo);
+  return todo;
+};
 
-export default db;
+const deleteTodo = id => {
+  if (id >= todoList.length) return null;
+  todoList[id].active = false;
+  return todoList[id];
+};
+
+const getTodoList = () => todoList.filter(({active}) => active);
+
+addTodo('First todo!');
+
+export default {
+  addTodo,
+  deleteTodo,
+  getTodoList,
+};

@@ -1,4 +1,20 @@
 module.exports = {
-  root: true,
-  extends: ['eslint-config-airbnb-base'],
+  "plugins": [
+    "graphql",
+    "prettier"
+  ],
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+  },
+  "globals": {
+    "fetch": false
+  }
 };

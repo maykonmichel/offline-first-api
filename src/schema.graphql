@@ -3,7 +3,7 @@ schema {
 }
 
 type Query {
-    hello: String
+    todoList: [Todo!]!
 }
 
 type Todo {

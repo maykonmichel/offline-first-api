@@ -1,0 +1,10 @@
+{
+  "name": "offline-first",
+  "version": "0.0.1",
+  "description": "Offline first API",
+  "main": "index.js",
+  "repository": "https://github.com/maykonmichel/offline-first-api",
+  "author": "Maykon Michel",
+  "license": "MIT",
+  "private": false
+}

@@ -2,7 +2,7 @@ const todoList = [];
 
 const addTodo = async description => {
   await new Promise(resolve => setTimeout(resolve, 3000));
-  const todo = {id: todoList.length + 1, active: true, description};
+  const todo = {id: new Date().getTime().toString(), active: true, description};
   todoList.push(todo);
   return todo;
 };

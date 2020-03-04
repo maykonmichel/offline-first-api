@@ -1,6 +1,6 @@
 {
   "name": "offline-first",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Offline first API",
   "main": "./src/index.js",
   "repository": "https://github.com/maykonmichel/offline-first-api",

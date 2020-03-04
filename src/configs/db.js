@@ -1,6 +1,7 @@
 const todoList = [];
 
-const addTodo = description => {
+const addTodo = async description => {
+  await new Promise(resolve => setTimeout(resolve, 3000));
   const todo = {id: todoList.length + 1, active: true, description};
   todoList.push(todo);
   return todo;
@@ -14,7 +15,7 @@ const deleteTodo = id => {
 
 const getTodoList = () => todoList.filter(({active}) => active);
 
-addTodo('First todo!');
+addTodo('First todo!').then();
 
 export default {
   addTodo,

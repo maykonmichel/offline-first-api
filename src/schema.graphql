@@ -1,0 +1,17 @@
+schema {
+    query: Query
+}
+
+type Mutation {
+    addTodo(description: String!): Todo!
+    deleteTodo(id: ID!): Todo!
+}
+
+type Query {
+    todoList: [Todo!]!
+}
+
+type Todo {
+    id: ID!
+    description: String!
+}

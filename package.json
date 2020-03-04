@@ -1,10 +1,32 @@
 {
   "name": "offline-first",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Offline first API",
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": "https://github.com/maykonmichel/offline-first-api",
   "author": "Maykon Michel",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-graphql": "^3.1.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  }
 }

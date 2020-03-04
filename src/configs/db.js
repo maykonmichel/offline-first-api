@@ -7,7 +7,8 @@ const addTodo = async description => {
   return todo;
 };
 
-const deleteTodo = id => {
+const deleteTodo = async id => {
+  await new Promise(resolve => setTimeout(resolve, 3000));
   const index = todoList.findIndex(todo => todo.id === id);
   todoList[index].active = false;
   return todoList[index];

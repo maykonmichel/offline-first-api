@@ -8,9 +8,9 @@ const addTodo = async description => {
 };
 
 const deleteTodo = id => {
-  if (id >= todoList.length) return null;
-  todoList[id].active = false;
-  return todoList[id];
+  const index = todoList.findIndex(todo => todo.id === id);
+  todoList[index].active = false;
+  return todoList[index];
 };
 
 const getTodoList = () => todoList.filter(({active}) => active);

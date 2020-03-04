@@ -1,1 +1,1 @@
-export default (parent, {id}, {db: {deleteTodo}}) => deleteTodo(id - 1);
+export default (parent, {id}, {db: {deleteTodo}}) => deleteTodo(id);
